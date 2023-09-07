@@ -27,3 +27,7 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Versions
+Node: 16.9.0
+NPM: 7.21.1
