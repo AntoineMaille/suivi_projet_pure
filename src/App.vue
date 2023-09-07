@@ -23,7 +23,7 @@ import Home from "@/components/pages/Home.vue";
             <v-container>
                 <v-row>
                     <v-col cols="12">
-                        <Home/>
+                        <router-view/>
                     </v-col>
                 </v-row>
             </v-container>
