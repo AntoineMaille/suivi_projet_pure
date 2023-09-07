@@ -1,6 +1,8 @@
 <script setup>
-    import {ref} from "vue";
-    import Drawer from "@/components/navigation/Drawer.vue";
+import {onMounted, ref} from "vue";
+import Drawer from "@/components/navigation/Drawer.vue";
+import Home from "@/components/pages/Home.vue";
+
 
     let drawer = ref(false)
 </script>
@@ -21,7 +23,7 @@
             <v-container>
                 <v-row>
                     <v-col cols="12">
-                        <router-view/>
+                        <Home/>
                     </v-col>
                 </v-row>
             </v-container>

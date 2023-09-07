@@ -1,4 +1,6 @@
 import './assets/css/main.css'
+import 'vuetify/dist/vuetify.min.css'
+
 
 import { createApp } from 'vue'
 import App from './App.vue'

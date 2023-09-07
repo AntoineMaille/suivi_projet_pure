@@ -1,10 +1,10 @@
 <script setup>
+import Timeline from "@/components/timeline/Timeline.vue";
 </script>
 
 <template>
 <div>
-  <h1>Home</h1>
-  <h3>Home page</h3>
+  <Timeline/>
 </div>
 </template>
 
