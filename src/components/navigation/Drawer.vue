@@ -1,19 +1,27 @@
 <template>
-    <v-navigation-drawer
-            :value="drawer"
-    >
-    </v-navigation-drawer>
+    <v-app-bar-nav-icon variant="text" @click.stop="props.click"></v-app-bar-nav-icon>
+
+    <v-toolbar-title>Pure</v-toolbar-title>
+
+    <v-spacer></v-spacer>
+
+    <v-btn variant="text" icon="mdi-magnify"></v-btn>
+
+    <v-btn variant="text" icon="mdi-filter"></v-btn>
+
+    <v-btn variant="text" icon="mdi-dots-vertical"></v-btn>
+
 </template>
 
 <script setup>
 
-defineProps({
-    drawer: {type  : Boolean, required: true, default:false},
+const props = defineProps({
+    is_open: Boolean,
+    click: Function
 });
 
 
+
+
+  
 </script>
-
-<style scoped>
-
-</style>
