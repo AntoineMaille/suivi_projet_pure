@@ -1,0 +1,9 @@
+{
+  "title": "The beginning",
+  "id": "article1",
+  "image": "/images/rocket.png",
+  "resume": "This article goes through the kick-of of the project",
+  "color": "green",
+  "icon": "/icons/icon1.png",
+  "date": "12-09-2023"
+}
