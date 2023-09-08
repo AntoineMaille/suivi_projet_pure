@@ -18,11 +18,13 @@ import TimeLineCard from "@/components/timeline/TimeLineCard.vue";
 const summaries = ref([])
 onMounted(async () => {
 
-    const files = import.meta.glob('@/assets/summaries/*.json');
+    const files = import.meta.glob('/public/summaries/*.json');
 
     // Iterate through loaded JSON files
-    for (const filePath in files) {
+    for (let filePath in files) {
         if (files.hasOwnProperty(filePath)) {
+            //remove /public from path
+            filePath = filePath.replace('/public', '');
             const jsonData = await fetch(filePath).then(response => response.json()); // Get the JSON data
             summaries.value.push(jsonData);// Add the data to the array
         }
