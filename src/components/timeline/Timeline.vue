@@ -9,6 +9,7 @@
         <v-card>
             <v-img :src="item.image" cover  height="200px"></v-img>
             <v-card-title class="headline">{{ item.title }}</v-card-title>
+            <v-card-subtitle>{{item.date}}</v-card-subtitle>
             <v-card-text>{{ item.resume }}</v-card-text>
             <v-card-actions>
                 <v-spacer/>
