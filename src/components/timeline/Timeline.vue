@@ -6,27 +6,19 @@
         :dot-color="item.color"
         :icon="item.icon"
     >
-        <v-card>
-            <v-img :src="item.image" cover  height="200px"></v-img>
-            <v-card-title class="headline">{{ item.title }}</v-card-title>
-            <v-card-subtitle>{{item.date}}</v-card-subtitle>
-            <v-card-text>{{ item.resume }}</v-card-text>
-            <v-card-actions>
-                <v-spacer/>
-                <v-btn color="teal-accent-4" >See More</v-btn>
-            </v-card-actions>
-        </v-card>
+        <TimeLineCard :item="item"/>
     </v-timeline-item>
 </v-timeline>
 </template>
 
 <script setup>
 import {onMounted, ref} from "vue";
+import TimeLineCard from "@/components/timeline/TimeLineCard.vue";
 
 const summaries = ref([])
 onMounted(async () => {
 
-    const files = import.meta.glob('@/assets/summaries/*.json');
+    const files = import.meta.glob('/src/assets/summaries/*.json');
 
     // Iterate through loaded JSON files
     for (const filePath in files) {
@@ -38,7 +30,3 @@ onMounted(async () => {
 //load all files in assets/summary folder in vue3
 })
 </script>
-
-<style scoped>
-
-</style>

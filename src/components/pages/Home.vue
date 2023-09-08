@@ -3,7 +3,7 @@ import Timeline from "@/components/timeline/Timeline.vue";
 </script>
 
 <template>
-<div>
+<div style="display: flex" class="align-center justify-center">
   <Timeline/>
 </div>
 </template>
