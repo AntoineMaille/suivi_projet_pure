@@ -1,7 +1,9 @@
 {
-  "title": "Le commencement",
+  "title": "Project organisation",
+  "id": "article2",
   "image": "/images/le-commencement.png",
-  "resume": "Le commencement",
+  "resume": "This article goes through the kick-of of the project",
   "color": "green",
-  "icon": "star"
+  "icon": "icons/icon2.png",
+  "date": null
 }

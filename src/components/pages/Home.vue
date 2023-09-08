@@ -1,11 +1,15 @@
 <script setup>
 import Timeline from "@/components/timeline/Timeline.vue";
+import WaveDivider from "@/components/header/WaveHeader.vue";
 </script>
 
 <template>
-<div style="display: flex" class="align-center justify-center">
-  <Timeline/>
-</div>
+    <div>
+        <WaveDivider/>
+        <div style="display: flex" class="align-center justify-center">
+            <Timeline/>
+        </div>
+    </div>
 </template>
 
 <style>

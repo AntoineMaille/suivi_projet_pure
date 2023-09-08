@@ -6,12 +6,30 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import VueRouter from './router.js'
 
+
 // Vuetify
 import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
+import { createVuetify} from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 import { aliases, md } from 'vuetify/iconsets/md'
+
+const pureTheme = {
+    dark: false,
+    colors: {
+        background: '#FFFFFF',
+        surface: '#FFFFFF',
+        primary: '#305133',
+        'primary-darken-1': '#243b26',
+        'onPrimary': '#282828',
+        secondary: '#9DDB80',
+        'secondary-darken-1': '#84b46a',
+        error: '#f54762',
+        info: '#2196F3',
+        success: '#4CAF50',
+        warning: '#FB8C00',
+    },
+}
 
 const vuetify = createVuetify({
     components,
@@ -23,14 +41,10 @@ const vuetify = createVuetify({
             md,
         },
     },
-    themes: {
-        light: {
-            primary: '#305133',
-            secondary: '#9DDB80',
-            onPrimary: '#FFFFFF',
-            onSecondary: '#FFFFFF',
-            accent: '#8c9eff',
-            error: '#b71c1c',
+    theme: {
+        defaultTheme: 'pureTheme',
+        themes: {
+            pureTheme,
         },
     },
 })
