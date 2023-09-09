@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import {onBeforeUnmount, onMounted, ref} from "vue";
+import {onBeforeMount, onBeforeUnmount, onMounted, ref} from "vue";
 import TimeLineCard from "@/components/timeline/components/TimeLineCard.vue";
 import moment from "moment";
 
@@ -37,10 +37,14 @@ onMounted(async () => {
         }
     }
 
+
+
+});
+
+onBeforeMount(() => {
     //listen for resize window
     resizeHandler();
     window.addEventListener("resize", resizeHandler);
-
 });
 
 onBeforeUnmount(() => {
