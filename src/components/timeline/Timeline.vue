@@ -1,9 +1,10 @@
 <template>
-    <v-timeline>
+    <v-timeline
+    :side="isMobile === true ? 'end' : ''"
+    >
         <v-timeline-item
                 v-for="item in summaries"
                 :key="item.title"
-                :id="item.id"
         >
             <template v-slot:icon>
                 <v-avatar :image="item.icon"></v-avatar>
@@ -34,5 +35,15 @@ onMounted(async () => {
             summaries.value.push(jsonData);// Add the data to the array
         }
     }
-})
+
+    //listen for resize window
+    window.addEventListener("resize", resizeHandler);
+
+});
+
+let isMobile = ref(false)
+
+function  resizeHandler() {
+    window.innerWidth <  600 ? isMobile.value = true : isMobile.value = false;
+}
 </script>

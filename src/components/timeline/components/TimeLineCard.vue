@@ -1,12 +1,12 @@
 <template>
-    <v-card :disabled="disabled" style="width:300px;" :class="disabled === true?'grayed':''">
+    <v-card :id="item.id" :disabled="disabled" class="timeline-card" :class="disabled === true?'grayed':''">
         <v-img :src="item.image" cover height="100px"></v-img>
         <v-card-title class="headline">{{ item.title }}</v-card-title>
-        <v-card-subtitle>{{ item.date === null ? 'To be determined' : displayedDate }}</v-card-subtitle>
+        <v-card-subtitle class="font-italic">{{ item.date === null ? 'To be determined' : displayedDate }}</v-card-subtitle>
         <v-card-text>{{ item.resume }}</v-card-text>
         <v-card-actions>
             <v-spacer/>
-            <v-btn color="teal-accent-4">See More</v-btn>
+            <v-btn color="teal-accent-4">En Savoir Plus</v-btn>
         </v-card-actions>
 
     </v-card>
@@ -19,6 +19,10 @@ const {item} = defineProps({
     item: {
         type: Object,
         required: true
+    },
+    isMobile: {
+        type: Boolean,
+        default: false
     }
 });
 let displayedDate = ref(null)
@@ -29,13 +33,25 @@ if (item.date !== null) {
 
     //compare now with item.date moment
     const now = moment();
-   if (parsedDate.diff(now, 'days')) disabled.value = true;
-}
-else disabled.value = true
+    if (parsedDate.diff(now, 'days') > 0) disabled.value = true;
+} else disabled.value = true
 
 </script>
 <style scoped>
-.grayed{
+.grayed {
     filter: grayscale(1);
 }
+
+
+.timeline-card {
+    width: 300px;
+}
+
+@media (max-width: 600px) {
+    .timeline-card {
+        width: 90%;
+    }
+
+}
+
 </style>
