@@ -1,9 +1,11 @@
 <template>
-    <v-timeline>
+    <v-timeline
+        class="w-100"
+    :side="isMobile === true ? 'end' : ''"
+    >
         <v-timeline-item
                 v-for="item in summaries"
                 :key="item.title"
-                :id="item.id"
         >
             <template v-slot:icon>
                 <v-avatar :image="item.icon"></v-avatar>
@@ -14,7 +16,7 @@
 </template>
 
 <script setup>
-import {onMounted, ref} from "vue";
+import {onBeforeMount, onBeforeUnmount, onMounted, ref} from "vue";
 import TimeLineCard from "@/components/timeline/components/TimeLineCard.vue";
 import moment from "moment";
 
@@ -34,5 +36,24 @@ onMounted(async () => {
             summaries.value.push(jsonData);// Add the data to the array
         }
     }
+
+
+
+});
+
+onBeforeMount(() => {
+    //listen for resize window
+    resizeHandler();
+    window.addEventListener("resize", resizeHandler);
+});
+
+onBeforeUnmount(() => {
+    window.removeEventListener("resize", resizeHandler);
 })
+
+let isMobile = ref(false)
+
+function  resizeHandler() {
+    window.innerWidth <  900 ? isMobile.value = true : isMobile.value = false;
+}
 </script>

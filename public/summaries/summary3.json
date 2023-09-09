@@ -1,9 +1,8 @@
 {
-  "title": "The beginning",
-  "id": "article1",
-  "image": "/images/rocket.png",
-  "resume": "This article goes through the kick-of of the project",
-  "color": "green",
-  "icon": "/icons/icon1.png",
-  "date": "12-09-2023"
+  "title": "La communication du projet",
+  "id": "article3",
+  "image": "/images/com.png",
+  "resume": "Afin de construire une communauté autour du projet avant même sa sortie, nous avons décidé de communiquer sur ce dernier tout au long du développement, depuis la genèse du projet jusqu'à sa mise en production.",
+  "icon": "/icons/icon3.png",
+  "date": null
 }

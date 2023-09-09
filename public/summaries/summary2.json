@@ -1,9 +1,8 @@
 {
-  "title": "Project organisation",
+  "title": "l'Organisation du projet",
   "id": "article2",
   "image": "/images/le-commencement.png",
-  "resume": "This article goes through the kick-of of the project",
-  "color": "green",
-  "icon": "icons/icon3.svg",
+  "resume": "Découvrez comment nous nous sommes organisés au sein de l'équipe pour mener à bien ce projet.",
+  "icon": "icons/icon2.png",
   "date": null
 }

@@ -9,8 +9,8 @@
 
     const items = [
     {
-        icon: 'mdi-dots-vertical', 
-        title:'Dashboard', 
+        icon: 'mdi-dots-vertical',
+        title:'Dashboard',
         route:'/dashboard'
     },
     {
@@ -56,9 +56,13 @@
                     <v-icon size="large" icon="menu" @click="this.drawer = !this.drawer">
                     </v-icon>
                 </v-app-bar-nav-icon>
+                <v-btn style="cursor: pointer" icon to="/">
+                    <v-avatar size="30" image="/rounded-icon.png"/>
+                </v-btn>
             </template>
             <v-app-bar-title>Pure</v-app-bar-title>
-        </v-app-bar> -->
+        </v-app-bar>
+<!--        <Drawer drawer="drawer"/>-->
         <v-main>
             <router-view/>
         </v-main>
