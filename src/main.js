@@ -24,6 +24,7 @@ const pureTheme = {
         'onPrimary': '#282828',
         secondary: '#9DDB80',
         'secondary-darken-1': '#84b46a',
+        'secondary-darken-2': '#62834c',
         error: '#f54762',
         info: '#2196F3',
         success: '#4CAF50',

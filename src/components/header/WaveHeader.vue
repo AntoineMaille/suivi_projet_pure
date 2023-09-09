@@ -2,7 +2,7 @@
     <div class="wave-container">
         <div style="display: flex" class="flex-column align-center justify-end h-100 w-100">
             <v-spacer/>
-            <h1><span v-html="text"></span></h1>
+            <h1 class="pa-10">DÉCOUVREZ LA ROADMAP DU PROJET <img id='logo' alt="logo" src="/rounded-icon.png"/>URE .</h1>
             <v-spacer/>
             <ScrollDownButton class="mb-12" href="#section-2"/>
         </div>
@@ -12,38 +12,19 @@
 <script setup>
 
 import ScrollDownButton from "@/components/header/ScrollDownButton.vue";
-import {onMounted, ref} from "vue";
-
-let originalText = "DÉCOUVREZ LA ROADMAP DU PROJET PURE ."
-let text = ref("DÉCOUVREZ LA ROADMAP DU PROJET <img style=\"  width: 50px;height: 50px;vertical-align: middle; margin-right: 5px\" id=\"animatedLogo\" alt=\"bla\" src=\"/rounded-icon.png\"/>URE .")
-
-function replaceWithLogo() {
-    text.value = originalText.substring(0, 31) +
-        ` <img style="  width: 50px;height: 50px;vertical-align: middle; margin-right: 5px" id="animatedLogo" alt="bla" src="/rounded-icon.png"/>` + originalText.substring(31 + 1);
-}
+import {ref} from "vue";
 
 
 </script>
 
 <style scoped>
 
-h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    font-family: 'Questrial', sans-serif;
-    margin: 0;
-    padding: 0;
-    letter-spacing: 4px;
-    color: #faeeee;
-    transition: all 0.5s ease-in-out;
-}
 
 .wave-container {
     height: 40vh;
     background-color: rgb(var(--v-theme-secondary-darken-1));
     position: relative;
 }
-
 
 
 .wave-container::before {
@@ -62,6 +43,36 @@ h1 {
 @media (max-width: 850px) {
     .wave-container::before {
         height: 38.5px
+    }
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 4px;
+    color: #faeeee;
+    transition: all 0.5s ease-in-out;
+}
+
+@media (max-width: 700px) {
+    #logo{
+        width: 25px;
+        height: 25px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
     }
 }
 
