@@ -1,5 +1,6 @@
 <template>
     <v-timeline
+        class="w-100"
     :side="isMobile === true ? 'end' : ''"
     >
         <v-timeline-item
@@ -15,7 +16,7 @@
 </template>
 
 <script setup>
-import {onMounted, ref} from "vue";
+import {onBeforeUnmount, onMounted, ref} from "vue";
 import TimeLineCard from "@/components/timeline/components/TimeLineCard.vue";
 import moment from "moment";
 
@@ -37,13 +38,18 @@ onMounted(async () => {
     }
 
     //listen for resize window
+    resizeHandler();
     window.addEventListener("resize", resizeHandler);
 
 });
 
+onBeforeUnmount(() => {
+    window.removeEventListener("resize", resizeHandler);
+})
+
 let isMobile = ref(false)
 
 function  resizeHandler() {
-    window.innerWidth <  600 ? isMobile.value = true : isMobile.value = false;
+    window.innerWidth <  900 ? isMobile.value = true : isMobile.value = false;
 }
 </script>

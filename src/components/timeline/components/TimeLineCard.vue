@@ -44,10 +44,18 @@ if (item.date !== null) {
 
 
 .timeline-card {
-    width: 300px;
+    width: 500px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+    .timeline-card {
+        width: 400px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
     .timeline-card {
         width: 90%;
     }
