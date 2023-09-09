@@ -29,9 +29,7 @@
 
 <template>
     <v-app>
-        <v-app-bar scroll-behavior="elevate" color="secondary-darken-1" prominent>
-            <Drawer :is_open="drawer" :click="click"/>
-        </v-app-bar>
+        <Drawer :is_open="drawer" :click="click"/>
         <v-navigation-drawer
             v-model="drawer"
             location="left"
@@ -50,15 +48,6 @@
                 </v-list-item>
             </v-list>
         </v-navigation-drawer>
-        <!-- <v-app-bar scroll-behavior="elevate" color="secondary-darken-1">
-            <template v-slot:prepend>
-                <v-app-bar-nav-icon>
-                    <v-icon size="large" icon="menu" @click="this.drawer = !this.drawer">
-                    </v-icon>
-                </v-app-bar-nav-icon>
-            </template>
-            <v-app-bar-title>Pure</v-app-bar-title>
-        </v-app-bar> -->
         <v-main>
             <router-view/>
         </v-main>
