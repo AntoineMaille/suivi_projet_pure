@@ -1,7 +1,7 @@
 <template>
     <v-card :id="item.id" :disabled="disabled" class="timeline-card" :class="disabled === true?'grayed':''">
         <v-img :src="item.image" cover height="100px"></v-img>
-        <v-card-title class="headline">{{ item.title }}</v-card-title>
+        <v-card-title class="headline text-wrap">{{ item.title }}</v-card-title>
         <v-card-subtitle class="font-italic">{{ item.date === null ? 'To be determined' : displayedDate }}</v-card-subtitle>
         <v-card-text>{{ item.resume }}</v-card-text>
         <v-card-actions>
