@@ -4,7 +4,7 @@
     <v-img :src="author.avatar"></v-img>
 </v-avatar>
     <div class="d-flex flex-column">
-        <h3 style="color: #242424">{{author.name}}</h3>
+        <h3 style="color: #242424; font-weight: lighter">{{author.name}}</h3>
         <span class="font-italic">{{author.description}}</span>
 
     </div>
