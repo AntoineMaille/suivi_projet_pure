@@ -26,7 +26,7 @@ const {id} = defineProps({
 })
 
 const author = ref({})
-author.value = await fetch(`/public/articles/authors/${id}.json`).then(response => response.json());
+author.value = await fetch(`/articles/authors/${id}.json`).then(response => response.json());
 </script>
 
 <style scoped>
