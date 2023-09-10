@@ -23,7 +23,7 @@
 
 <template>
     <v-app>
-        <v-app-bar scroll-behavior="elevate" color="secondary-darken-1" prominent>
+        <v-app-bar :color="$route.meta && $route.meta.color?$route.meta.color:'secondary-darken-1'" :scroll-behavior="$route.meta && $route.meta.scrollBehavior?$route.meta.scrollBehavior:''" color="secondary-darken-1" prominent>
             <template v-slot:prepend>
                 <v-app-bar-nav-icon  @click.stop="click">
                     <v-icon size="large" icon="menu">
@@ -37,7 +37,6 @@
         <v-navigation-drawer
             v-model="drawer"
             location="left"
-            color="secondary-darken-1"
             temporary
         >
             <v-list nav>

@@ -8,11 +8,18 @@ const routes = [
         path: '/',
         name: 'Home',
         component: Home,
+        meta: {
+            color: 'secondary-darken-1',
+            scrollBehavior: 'elevate'
+        }
     },
     {
         path: '/article/:id',
         name: 'Article',
         component: Article,
+        meta: {
+            color: 'white',
+        }
     },
     {
         path: '/about',

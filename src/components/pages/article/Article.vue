@@ -1,15 +1,18 @@
 <template>
     <div class="d-flex justify-center w-100">
-        <div class="w-66 mt-5">
+        <div id="article-container" class="mt-5">
             <v-img class="mb-5" id="article-image" cover :src="article.image"/>
-            <div class="d-flex align-center">
-                <div v-for="author in article.authors">
-                    <Suspense>
-                        <Author :size="50" class="mt-4" :id="author" v-if="isArticleLoaded"/>
-                    </Suspense>
+            <div id="text-container">
+                <div class="d-flex align-center">
+                    <div v-for="author in article.authors">
+                        <Suspense>
+                            <Author :size="50" class="mt-4" :id="author" v-if="isArticleLoaded"/>
+                        </Suspense>
+                    </div>
                 </div>
+                <h1 id="title">{{ article.title }}</h1>
+                <span v-html="articleHtml" v-if="isArticleLoaded"/>
             </div>
-            <span id="title">{{ article.title }}</span>
         </div>
     </div>
 </template>
@@ -22,17 +25,20 @@ import {ref} from "vue";
 
 const route = useRoute();
 const id = route.params.id;
-const article = ref({})
+const article = ref({});
+const articleHtml = ref({});
 const isArticleLoaded = ref(false);
 const fetchData = async () => {
-    const response = await fetch(`/articles/article${id}.json`);
+    let response = await fetch(`/articles/article${id}/article${id}.json`);
     article.value = await response.json();
+    response = await fetch(`/articles/article${id}/article${id}.html`);
+    articleHtml.value =  await response.text();
     isArticleLoaded.value = true;
 };
 
+
 fetchData()
 
-console.log(article.value)
 </script>
 
 <style scoped>
@@ -41,9 +47,51 @@ console.log(article.value)
     height: 45vh;
 }
 
+#article-container {
+    width: 66%;
+}
+
 #title {
-    font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
+}
+
+
+@media (max-width: 1300px) {
+    #article-container {
+        width: 80%;
+    }
+
+    #title {
+        font-size: 50px;
+    }
+}
+@media (max-width: 1000px) {
+
+    #title {
+        font-size: 40px;
+    }
+}
+@media (max-width: 750px) {
+    #article-container {
+        width: 100%;
+        margin-top: 0px!important;
+    }
+
+    #article-image{
+        border-radius: 0px;
+    }
+
+    #text-container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 
 }
+@media (max-width: 400px) {
+   #title {
+        font-size: 30px;
+    }
+
+}
+
 </style>
