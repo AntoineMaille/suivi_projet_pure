@@ -1,8 +1,9 @@
 {
   "title": "Kick-Off",
-  "id": "article1",
+  "id": 1,
+  "ref": "article1",
   "image": "/images/rocket.png",
   "resume": "Découvrez la naissance du projet pure, ses objectifs et ses engagements.",
   "icon": "/icons/icon1.png",
-  "date": "12-09-2023"
+  "date": "10-09-2023"
 }

@@ -1,12 +1,25 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from './components/pages/Home.vue'
+import Home from './components/pages/home/Home.vue'
 import About from './components/pages/About.vue'
+import Article from "@/components/pages/article/Article.vue";
 
 const routes = [
     {
         path: '/',
         name: 'Home',
         component: Home,
+        meta: {
+            color: 'secondary-darken-1',
+            scrollBehavior: 'elevate'
+        }
+    },
+    {
+        path: '/article/:id',
+        name: 'Article',
+        component: Article,
+        meta: {
+            color: 'white',
+        }
     },
     {
         path: '/about',

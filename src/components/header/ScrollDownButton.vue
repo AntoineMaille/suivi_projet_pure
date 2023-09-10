@@ -35,7 +35,7 @@ async function scrollToLastNews() {
             const jsonData = await fetch(filePath).then(response => response.json()); // Get the JSON data
             if (moment(jsonData.date, "DD-MM-YYYY").diff(moment(lastNewsDate, "DD-MM-YYYY")) < 0) {
                 lastNewsDate = jsonData.date;
-                lastNewsName = jsonData.id;
+                lastNewsName = jsonData.ref;
             }
             //insert the data sorted by date
         }
