@@ -9,7 +9,7 @@ const routes = [
         name: 'Home',
         component: Home,
         meta: {
-            color: 'secondary-darken-1',
+            color: 'primary-darken-1',
             scrollBehavior: 'elevate'
         }
     },

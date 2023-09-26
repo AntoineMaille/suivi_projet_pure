@@ -2,7 +2,7 @@
     <div class="wave-container">
         <div style="display: flex" class="flex-column align-center justify-end h-100 w-100">
             <v-spacer/>
-            <h1 class="pa-10">DÉCOUVREZ LA ROADMAP DU PROJET <img id='logo' alt="logo" src="/rounded-icon.png"/>URE .</h1>
+            <h1 class="pa-10">DÉCOUVREZ LA ROADMAP DU PROJET <span>JOB INTERMITTENTS</span></h1>
             <v-spacer/>
             <ScrollDownButton class="mb-12" href="#section-2"/>
         </div>
@@ -22,7 +22,7 @@ import {ref} from "vue";
 
 .wave-container {
     height: 40vh;
-    background-color: rgb(var(--v-theme-secondary-darken-1));
+    background-color: rgb(var(--v-theme-primary));
     position: relative;
 }
 
@@ -61,8 +61,12 @@ h1 {
     margin: 0;
     padding: 0;
     letter-spacing: 4px;
-    color: #faeeee;
+    color: rgb(var(--v-theme-on-primary));
     transition: all 0.5s ease-in-out;
+}
+
+h1 > span{
+    color: rgb(var(--v-theme-secondary-darken-1));
 }
 
 @media (max-width: 700px) {

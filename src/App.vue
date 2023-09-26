@@ -23,14 +23,14 @@
 
 <template>
     <v-app>
-        <v-app-bar :color="$route.meta && $route.meta.color?$route.meta.color:'secondary-darken-1'" :scroll-behavior="$route.meta && $route.meta.scrollBehavior?$route.meta.scrollBehavior:''" color="secondary-darken-1" prominent>
+        <v-app-bar :color="$route.meta && $route.meta.color?$route.meta.color:'primary-darken-1'" :scroll-behavior="$route.meta && $route.meta.scrollBehavior?$route.meta.scrollBehavior:''" color="secondary-darken-1" prominent>
             <template v-slot:prepend>
                 <v-app-bar-nav-icon  @click.stop="click">
                     <v-icon size="large" icon="menu">
                     </v-icon>
                 </v-app-bar-nav-icon>
                 <v-btn style="cursor: pointer" icon to="/">
-                    <v-avatar size="30" image="/rounded-icon.png"/>
+                    <v-avatar size="30" image="/cam.png"/>
                 </v-btn>
             </template>
         </v-app-bar>
