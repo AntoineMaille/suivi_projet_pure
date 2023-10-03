@@ -30,7 +30,7 @@
                     </v-icon>
                 </v-app-bar-nav-icon>
                 <v-btn style="cursor: pointer" icon to="/">
-                    <v-avatar size="30" image="/cam.png"/>
+                    <v-avatar size="30" image="/castin/castin-rounded-icon.png"/>
                 </v-btn>
             </template>
         </v-app-bar>

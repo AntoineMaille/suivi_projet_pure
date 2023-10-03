@@ -2,7 +2,7 @@
     <div class="wave-container">
         <div style="display: flex" class="flex-column align-center justify-end h-100 w-100">
             <v-spacer/>
-            <h1 class="pa-10">DÉCOUVREZ LA ROADMAP DU PROJET <span>JOB INTERMITTENTS</span></h1>
+            <h1 class="pa-10">DÉCOUVREZ LA ROADMAP DU PROJET <span>CAST'IN</span></h1>
             <v-spacer/>
             <ScrollDownButton class="mb-12" href="#section-2"/>
         </div>

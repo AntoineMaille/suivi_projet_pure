@@ -19,9 +19,9 @@ const pureTheme = {
     colors: {
         background: '#FFFFFF',
         surface: '#FFFFFF',
-        primary: '#F8F0E5',
-        'primary-darken-1': '#D1C0A3',
-        'on-primary': '#494949',
+        primary: '#EADBC8',
+        'primary-darken-1': '#DAC0A3',
+        'on-primary': '#222223',
         secondary: '#102C57',
         'secondary-darken-1': '#0b1e3b',
         'secondary-darken-2': '#061225',
