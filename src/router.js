@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Roadmap from './components/pages/roadmap/Roadmap.vue'
 import Home from './components/pages/home/Home.vue'
 import About from './components/pages/About.vue'
 import Article from "@/components/pages/article/Article.vue";
@@ -25,6 +26,15 @@ const routes = [
         path: '/about',
         name: 'About',
         component: About,
+    },
+    {
+        path: '/roadmap',
+        name: 'Roadmap',
+        component: Roadmap,
+        meta: {
+            color: 'primary-darken-1',
+            scrollBehavior: 'elevate'
+        }
     },
     // autres routes
     {

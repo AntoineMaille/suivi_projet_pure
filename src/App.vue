@@ -16,7 +16,12 @@
         icon: 'help',
         title: 'About',
         route: '/about',
-    }
+    },
+      {
+        icon: 'help',
+        title: 'Roadmap',
+        route: '/roadmap',
+      }
 ];
 
 </script>

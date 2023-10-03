@@ -17,7 +17,7 @@
 
 <script setup>
 import {onBeforeMount, onBeforeUnmount, onMounted, ref} from "vue";
-import TimeLineCard from "@/components/pages/home/components/timeline/components/TimeLineCard.vue";
+import TimeLineCard from "@/components/pages/roadmap/components/timeline/components/TimeLineCard.vue";
 import moment from "moment";
 
 let summaries = ref([])

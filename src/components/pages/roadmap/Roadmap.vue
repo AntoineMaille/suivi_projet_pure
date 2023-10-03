@@ -1,5 +1,5 @@
 <script setup>
-//import Timeline from "@/components/pages/home/components/";
+import Timeline from "@/components/pages/roadmap/components/timeline/Timeline.vue";
 import WaveDivider from "@/components/header/WaveHeader.vue";
 </script>
 
