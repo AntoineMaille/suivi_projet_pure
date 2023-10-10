@@ -2,7 +2,7 @@
   <div class="wave-container">
     <div style="display: flex" class="flex-column align-center justify-end h-100 w-100">
       <v-spacer />
-      <h1 class="pa-10">{{ title }} <span>CAST'IN</span></h1>
+      <h1 class="pa-10">{{ title }} <span style="font-family: Heimdal">CAST'IN</span></h1>
       <v-spacer />
       <ScrollDownButton class="mb-12" href="#section-2" v-if="$route.path === '/roadmap'"/>
     </div>
@@ -11,6 +11,7 @@
 <script setup>
 
 import ScrollDownButton from "@/components/header/ScrollDownButton.vue";
+import '../../assets/css/font.css';
 import { ref, defineProps } from "vue";
 const props = defineProps({
   title: String,
