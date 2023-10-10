@@ -18,7 +18,7 @@
         route: '/about',
     },
       {
-        icon: 'help',
+        icon: 'map',
         title: 'Roadmap',
         route: '/roadmap',
       }
