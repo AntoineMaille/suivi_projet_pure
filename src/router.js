@@ -19,7 +19,8 @@ const routes = [
         name: 'Article',
         component: Article,
         meta: {
-            color: 'white',
+            color: 'primary-darken-1',
+            scrollBehavior: 'elevate'
         }
     },
     {
