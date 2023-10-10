@@ -1,16 +1,16 @@
 <template>
-    <div class="d-flex justify-center w-100">
+    <div class="bodyArticle d-flex justify-center w-100">
         <div id="article-container" class="mt-5">
             <v-img class="mb-5" id="article-image" cover :src="article.image"/>
             <div id="text-container">
                 <div class="d-flex align-center">
                     <div v-for="author in article.authors">
                         <Suspense>
-                            <Author :size="50" class="mt-4" :id="author" v-if="isArticleLoaded"/>
+                            <Author :size="49" class="mt-4" :id="author" v-if="isArticleLoaded"/>
                         </Suspense>
                     </div>
                 </div>
-                <h1 id="title">{{ article.title }}</h1>
+                <h1 id="title" style="text-align: center; margin-top: 5vh">{{ article.title }}</h1>
                 <span v-html="articleHtml" v-if="isArticleLoaded"/>
             </div>
         </div>
@@ -44,7 +44,8 @@ fetchData()
 <style scoped>
 #article-image {
     border-radius: 20px;
-    height: 45vh;
+    height: 40vh;
+    margin-top: 4vh;
 }
 
 #article-container {
