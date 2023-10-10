@@ -5,7 +5,7 @@ import WaveDivider from "@/components/header/WaveHeader.vue";
 
 <template>
     <div>
-        <WaveDivider title="Nouveau Titre"/>
+        <WaveDivider title="DÉCOUVREZ LE PROJET/>
         <div style="display: flex" class="align-center justify-center">
             <Timeline/>
         </div>
