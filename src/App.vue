@@ -23,6 +23,16 @@
         route: '/roadmap',
       }
 ];
+    let darkMode = ref(false);
+
+    const toggleDarkMode = () => {
+      darkMode.value = !darkMode.value;
+      if (darkMode.value) {
+        document.body.classList.add('dark-theme');
+      } else {
+        document.body.classList.remove('dark-theme');
+      }
+    };
 
 </script>
 
@@ -37,6 +47,8 @@
                 <v-btn style="cursor: pointer" icon to="/">
                     <v-avatar size="30" image="/castin/castin-rounded-icon.png"/>
                 </v-btn>
+                <v-spacer></v-spacer>
+                <v-switch class="darkMode" label="" @change="toggleDarkMode"></v-switch>
             </template>
         </v-app-bar>
         <v-navigation-drawer
@@ -61,4 +73,13 @@
 </template>
 
 <style scoped>
+.light-theme {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.dark-theme {
+  background-color: #333333;
+  color: #ffffff;
+}
 </style>

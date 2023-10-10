@@ -1,18 +1,21 @@
 <template>
-    <div class="wave-container">
-        <div style="display: flex" class="flex-column align-center justify-end h-100 w-100">
-            <v-spacer/>
-            <h1 class="pa-10">DÉCOUVREZ LA ROADMAP DU PROJET <span>CAST'IN</span></h1>
-            <v-spacer/>
-            <ScrollDownButton class="mb-12" href="#section-2"/>
-        </div>
+  <div class="wave-container">
+    <div style="display: flex" class="flex-column align-center justify-end h-100 w-100">
+      <v-spacer />
+      <h1 class="pa-10">{{ title }} <span>CAST'IN</span></h1>
+      <v-spacer />
+      <ScrollDownButton class="mb-12" href="#section-2" />
     </div>
+  </div>
 </template>
-
 <script setup>
 
 import ScrollDownButton from "@/components/header/ScrollDownButton.vue";
-import {ref} from "vue";
+import { ref, defineProps } from "vue";
+const props = defineProps({
+  title: String,
+});
+
 
 
 </script>

@@ -8,3 +8,10 @@ body {
     overflow-x: hidden;
     width: 100%
 }
+
+ .darkMode {
+     position: absolute;
+     right: 1%;
+     top: 65%;
+     transform: translateY(-50%);
+ }
