@@ -4,7 +4,9 @@
     <v-img :src="author.avatar"></v-img>
 </v-avatar>
     <div class="d-flex flex-column">
-        <h3 style="color: #242424; font-weight: lighter">{{author.name}}</h3>
+        <h3 style="color: #242424; font-weight: lighter" >
+          <a :href="author.linkedin" style="text-decoration: none; color: inherit;">{{author.name}}</a>
+        </h3>
         <span class="font-italic">{{author.description}}</span>
     </div>
   <div class="d-flex flex-column ml-10">
