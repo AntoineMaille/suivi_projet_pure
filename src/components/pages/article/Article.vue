@@ -3,15 +3,17 @@
         <div id="article-container" class="mt-5">
             <v-img class="mb-5" id="article-image" cover :src="article.image"/>
             <div id="text-container">
-                <div class="d-flex align-center">
+                <div class="d-flex justify-center">
                     <div v-for="author in article.authors">
                         <Suspense>
                             <Author :size="49" class="mt-4" :id="author" v-if="isArticleLoaded"/>
                         </Suspense>
                     </div>
                 </div>
-                <h1 id="title" style="text-align: center; margin-top: 5vh">{{ article.title }}</h1>
+              <div class="article">
+                <h1 id="title" style="text-align: center; margin-top: 2vh">{{ article.title }}</h1>
                 <span v-html="articleHtml" v-if="isArticleLoaded"/>
+              </div>
             </div>
         </div>
     </div>
@@ -22,6 +24,7 @@
 import {useRoute} from "vue-router";
 import Author from "@/components/pages/article/components/Author.vue";
 import {ref} from "vue";
+import '../../../assets/css/article.css'
 
 const route = useRoute();
 const id = route.params.id;
