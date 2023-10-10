@@ -6,8 +6,10 @@
     <div class="d-flex flex-column">
         <h3 style="color: #242424; font-weight: lighter">{{author.name}}</h3>
         <span class="font-italic">{{author.description}}</span>
-
     </div>
+  <div class="d-flex flex-column ml-10">
+    <!-- Ajout de ml-2 pour ajouter de la marge à gauche -->
+  </div>
 </div>
 </template>
 
