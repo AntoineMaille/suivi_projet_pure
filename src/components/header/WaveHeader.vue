@@ -4,7 +4,7 @@
       <v-spacer />
       <h1 class="pa-10">{{ title }} <span>CAST'IN</span></h1>
       <v-spacer />
-      <ScrollDownButton class="mb-12" href="#section-2" />
+      <ScrollDownButton class="mb-12" href="#section-2" v-if="$route.path === '/roadmap'"/>
     </div>
   </div>
 </template>
