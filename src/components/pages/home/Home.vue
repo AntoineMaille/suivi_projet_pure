@@ -37,7 +37,7 @@ import WaveDivider from "@/components/header/WaveHeader.vue";
           </div>
           <div class="presentation-section_text">
             <p>
-              Découvrez Cast'in en action sur l'iPhone. Notre application vous offre une expérience fluide et intuitive. Avec notre interface conviviale, vous pouvez créer et consulter des annonces de castings en un instant. Les filtres avancés vous permettent de cibler les offres en fonction de votre profil. Plus besoin de chercher ailleurs, tout ce dont vous avez besoin est à portée de main. Cast'in est la passerelle entre votre talent et les opportunités qui vous attendent. Rejoignez-nous aujourd'hui et faites briller votre carrière artistique.
+              Découvrez bientôt Cast'in en action sur téléphone. Notre application vous offrira une expérience fluide et intuitive. Avec notre interface conviviale, vous pourrez créer et consulter des annonces de castings en un instant. Les filtres avancés vous permettront de cibler les offres en fonction de votre profil. Plus besoin de chercher ailleurs, tout ce dont vous avez besoin est à portée de main. Cast'in sera la passerelle entre votre talent et les opportunités qui vous attendent. Rejoignez-nous aujourd'hui et faites briller votre carrière artistique.
             </p>
           </div>
         </div>
