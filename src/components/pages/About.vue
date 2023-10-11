@@ -8,7 +8,7 @@ const authors = ["Remy", "Rems", "Antoine", "Ayoub"]
 const authors2 = ref([]);
 const fetchData = async () => {
   for (let i = 0; i < authors.length; i++) {
-    let response = await fetch(`/articles/authors/${i}.json`);
+    let response = await fetch(`/articles/authors/${authors[i]}.json`);
     authors2.value.push(await response.json());
   }
 };
