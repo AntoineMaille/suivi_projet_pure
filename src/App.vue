@@ -47,7 +47,7 @@
                 <v-btn style="cursor: pointer" icon to="/">
                     <v-avatar size="30" image="/castin/castin-rounded-icon.png"/>
                 </v-btn>
-                <v-spacer></v-spacer>
+                
             </template>
         </v-app-bar>
         <v-navigation-drawer
