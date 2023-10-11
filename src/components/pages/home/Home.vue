@@ -60,9 +60,11 @@ import WaveDivider from "@/components/header/WaveHeader.vue";
 <style scoped>
 @media (max-width: 1000px) {
   .container_presentation_logo{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
   }
 }
 
@@ -117,10 +119,6 @@ display: flex;
   margin-bottom: 100px;
 }
 
-.app-screenshot img {
-  max-width: 100%;
-}
-
 
 .footer {
   margin-top: 60px;
@@ -131,7 +129,7 @@ display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -147,11 +145,9 @@ display: flex;
 }
 .presentation-section-image {
   display: flex;
-  max-width: 50%;
-  width: 100%;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 30%;
 }
 
 
