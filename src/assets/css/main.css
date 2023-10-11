@@ -6,7 +6,7 @@ html {
 
 body {
     overflow-x: hidden;
-    width: 100%
+    width: 100%;
 }
 
  .darkMode {
@@ -15,3 +15,5 @@ body {
      top: 65%;
      transform: translateY(-50%);
  }
+
+

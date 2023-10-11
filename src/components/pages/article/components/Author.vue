@@ -38,5 +38,13 @@ author.value = await fetch(`/articles/authors/${id}.json`).then(response => resp
   .d-flex {
     flex-direction: column;
   }
+
+  .font-italic {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
 }
 </style>
