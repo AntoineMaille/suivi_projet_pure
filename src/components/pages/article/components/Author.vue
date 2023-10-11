@@ -34,5 +34,9 @@ author.value = await fetch(`/articles/authors/${id}.json`).then(response => resp
 </script>
 
 <style scoped>
-
+@media (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+  }
+}
 </style>
