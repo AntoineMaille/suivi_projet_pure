@@ -10,25 +10,26 @@ import WaveDivider from "@/components/header/WaveHeader.vue";
     </div>
     <div class="container">
       <div class="presentation-section">
-        <h1 class="section-title">Cast'In</h1>
+        <h1 class="section-title">Soyez au cœur de l'action</h1>
         <div class="presentation-section_text">
         <p>
-          Cast'in est une application permettant de mettre en relation des intermittents du spectacle et / ou des personnes intéressées par des castings ou des missions. Plus besoin de passer des heures à fouiller les groupes Facebook, à scruter le profil des directeurs de casting, à lire toutes les newsletters ou à consulter un nombre incalculable de sites web, job intermittents centralise tout ! Cela concerne les comédiens, les figurants, les régisseurs, les doubleurs, les chargées de file, les directeurs de castings, les assistants de production, les chargés de production, les réalisateurs, les ingénieurs sons, les danseurs, etc., enfin bref tous les métiers du spectacle rémunérés au régime intermittent. Chaque personne en recherche posterait son annonce et un système de filtres serait disponible pour cibler la recherche selon le profil.
+          Cast'in est l'application qui vous rapproche du monde du spectacle. Que vous soyez un comédien, un régisseur, un danseur, ou tout autre professionnel du spectacle, notre plateforme vous met en relation avec des castings et des missions excitantes. Fini les longues heures de recherche sur divers sites web et les réseaux sociaux. Cast'in centralise tout, vous permettant de trouver rapidement les opportunités qui correspondent à votre profil. Plus qu'une application, Cast'in est votre passeport vers une carrière artistique épanouissante.
         </p>
         </div>
       </div>
       <div class="presentation-section">
+        <h1 class="section-title">La magie derrière notre logo</h1>
         <div class="presentation-section-image">
         <img src="/castin/Logo.png" alt="Logo de Cast'IN" />
         </div>
         <div class="presentation-section_text">
-        <p>Notre logo est une représentation visuelle puissante de notre identité de marque. Deux projecteurs lumineux surplombent fièrement le nom "Cast'in", symbolisant notre engagement à éclairer le chemin de ceux qui aspirent à briller sur scène. Ces projecteurs évoquent l'illumination de vos talents, tandis que le nom "Cast'in" s'inscrit en lettres audacieuses, renforçant ainsi notre présence dans le monde du spectacle. Notre logo incarne l'union de la passion, de la visibilité et des opportunités, tout en projetant une lumière sur votre potentiel artistique.</p>
+        <p>Notre logo incarne la magie du spectacle. Deux projecteurs lumineux, symboles de la scène, se dressent fièrement au-dessus du nom "Cast'in". Ces projecteurs ne sont pas seulement des sources de lumière, mais aussi des guides pour tous ceux qui aspirent à briller. Le nom "Cast'in" est écrit en caractères audacieux, reflétant notre engagement à vous offrir la visibilité dont vous avez besoin. Notre logo représente l'union de la passion, de la créativité, et de l'opportunité, projetant une lumière sur votre potentiel artistique.</p>
         </div>
         </div>
 
       <div class="presentation-section">
         <div class="title">
-        <h1 class="section-title">Présentation de l'Application</h1>
+        <h1 class="section-title"><span style="font-family: Heimdal">CAST'IN</span> en action</h1>
         </div>
         <div class="container_presentation_logo">
           <div class="presentation-section_app-screenshot">
@@ -36,7 +37,7 @@ import WaveDivider from "@/components/header/WaveHeader.vue";
           </div>
           <div class="presentation-section_text">
             <p>
-              Latenter adsistendo quae quicquid inpendentium ut latenter circulis formido laudes formido Antiochiae per super ad vel super colligendos quidam est inpendentium supprimerent dissimulanter quae conpluribus hi quaedam ut latenter noscere quae adsistendo quas homines regiam duplicarent super inpendentium Caesaris colligendos colligendos adsistendo in honoratorum posticas poterant invitis divites in parum his domus destinarentur inpendentium regiam laudes quas honoratorum conpluribus in ad supprimerent est regiam nuntiabant ignoti peius ut ut invitis duplicarent pervadendoque circulis peius in per per ut et habitu poterant supprimerent regiam poterant latera ut quidam ut laudes formido colligendos noscere peragranter cognita relaturi et per ipsa conpluribus adsistendo.
+              Découvrez Cast'in en action sur l'iPhone. Notre application vous offre une expérience fluide et intuitive. Avec notre interface conviviale, vous pouvez créer et consulter des annonces de castings en un instant. Les filtres avancés vous permettent de cibler les offres en fonction de votre profil. Plus besoin de chercher ailleurs, tout ce dont vous avez besoin est à portée de main. Cast'in est la passerelle entre votre talent et les opportunités qui vous attendent. Rejoignez-nous aujourd'hui et faites briller votre carrière artistique.
             </p>
           </div>
         </div>
@@ -44,7 +45,7 @@ import WaveDivider from "@/components/header/WaveHeader.vue";
       <div class="presentation-section">
       <div class="presentation-section_text">
         <p>
-          Suivez l'avancée du projet en suivant les posts sur la roadmap.
+          Restez informé de l'évolution de notre projet en consultant régulièrement les publications sur notre roadmap. Nous vous tiendrons au courant de nos progrès et des nouvelles fonctionnalités à venir. Nous sommes impatients de vous accueillir sur notre plateforme.
         </p>
       </div>
       </div>
