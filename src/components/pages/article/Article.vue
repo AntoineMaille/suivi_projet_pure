@@ -17,6 +17,9 @@
             </div>
         </div>
     </div>
+  <div class="footer">
+    <p>&copy; 2023 Cast'IN. Tous droits réservés.</p>
+  </div>
 </template>
 
 <script setup>
@@ -97,5 +100,9 @@ fetchData()
     }
 
 }
-
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+}
 </style>
