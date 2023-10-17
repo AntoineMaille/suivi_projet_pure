@@ -32,6 +32,21 @@ p {
     margin-bottom: 10px;
 }
 
+.image-container {
+    float : left;
+    margin-right: 20px;
+}
+
+.round-image {
+    border-radius: 50%;
+    width : 150px;
+    height : 150px;
+}
+
+.profil {
+    padding-bottom: 20px;
+}
+
 @media screen and (max-width: 768px) {
     .article {
         padding-left: 20px;
@@ -48,6 +63,12 @@ p {
 
     p {
         font-size: 14px;
+    }
+
+    .round-image {
+        border-radius: 50%;
+        width : 100px;
+        height : 100px;
     }
 }
 
