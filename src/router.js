@@ -4,6 +4,26 @@ import Home from './components/pages/home/Home.vue'
 import About from './components/pages/About.vue'
 import Article from "@/components/pages/article/Article.vue";
 
+async function checkIfArticleDateIsOk(id) {
+    const filePath = `/summaries/summary${id}.json`;
+    
+    const jsonData = await fetch(filePath)
+        .then(response => {
+            if (response.status === 404) {
+                return false;
+            }
+            return response.json();
+        });
+
+    if (!jsonData) {
+        return false;
+    }
+    
+    // format the date 01-01-2000 to Date.now() format
+    const date = new Date(jsonData.date.split('-').reverse().join('-')).getTime();
+    return date <= Date.now();
+}
+
 const routes = [
     {
         path: '/',
@@ -18,6 +38,16 @@ const routes = [
         path: '/article/:id',
         name: 'Article',
         component: Article,
+        // check if the route is the id is under 1000 and if the date is not in the future send to 404
+        beforeEnter: async (to, from, next) => {
+            const id = to.params.id;
+            if (!await checkIfArticleDateIsOk(id)) {
+                next('/not-found');
+                return;
+            }
+            next();
+            return;
+        },
         meta: {
             color: 'primary-darken-1',
             scrollBehavior: 'elevate'
