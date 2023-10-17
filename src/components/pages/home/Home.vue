@@ -4,50 +4,64 @@ import WaveDivider from "@/components/header/WaveHeader.vue";
 </script>
 <template>
   <div>
-    <WaveDivider title="DÉCOUVREZ LE PROJET" />
-    <div style="display: flex" class="align-center justify-center">
-      <Timeline />
-    </div>
+    <WaveDivider title="DÉCOUVREZ LE PROJET"/>
     <div class="container">
       <div class="presentation-section">
         <h1 class="section-title">Soyez au cœur de l'action</h1>
         <div class="presentation-section_text">
-        <p>
-          Cast'in est l'application qui vous rapproche du monde du spectacle. Que vous soyez un comédien, un régisseur, un danseur, ou tout autre professionnel du spectacle, notre plateforme vous met en relation avec des castings et des missions excitantes. Fini les longues heures de recherche sur divers sites web et les réseaux sociaux. Cast'in centralise tout, vous permettant de trouver rapidement les opportunités qui correspondent à votre profil. Plus qu'une application, Cast'in est votre passeport vers une carrière artistique épanouissante.
-        </p>
+          <p>
+            Cast'in est l'application qui vous rapproche du monde du spectacle. Que vous soyez un comédien, un
+            régisseur, un danseur, ou tout autre professionnel du spectacle, notre plateforme vous met en relation avec
+            des castings et des missions excitantes. Fini les longues heures de recherche sur divers sites web et les
+            réseaux sociaux. Cast'in centralise tout, vous permettant de trouver rapidement les opportunités qui
+            correspondent à votre profil. Plus qu'une application, Cast'in est votre passeport vers une carrière
+            artistique épanouissante.
+          </p>
         </div>
       </div>
       <div class="presentation-section">
         <h1 class="section-title">La magie derrière notre logo</h1>
         <div class="presentation-section-image">
-        <img src="/castin/Logo.png" alt="Logo de Cast'IN" />
+          <img src="/castin/Logo.png" alt="Logo de Cast'IN"/>
         </div>
         <div class="presentation-section_text">
-        <p>Notre logo incarne la magie du spectacle. Deux projecteurs lumineux, symboles de la scène, se dressent fièrement au-dessus du nom "Cast'in". Ces projecteurs ne sont pas seulement des sources de lumière, mais aussi des guides pour tous ceux qui aspirent à briller. Le nom "Cast'in" est écrit en caractères audacieux, reflétant notre engagement à vous offrir la visibilité dont vous avez besoin. Notre logo représente l'union de la passion, de la créativité, et de l'opportunité, projetant une lumière sur votre potentiel artistique.</p>
+          <p>Notre logo incarne la magie du spectacle. Deux projecteurs lumineux, symboles de la scène, se dressent
+            fièrement au-dessus du nom "Cast'in". Ces projecteurs ne sont pas seulement des sources de lumière, mais
+            aussi des guides pour tous ceux qui aspirent à briller. Le nom "Cast'in" est écrit en caractères audacieux,
+            reflétant notre engagement à vous offrir la visibilité dont vous avez besoin. Notre logo représente l'union
+            de la passion, de la créativité, et de l'opportunité, projetant une lumière sur votre potentiel
+            artistique.</p>
         </div>
-        </div>
+      </div>
 
       <div class="presentation-section">
         <div class="title">
-        <h1 class="section-title"><span style="font-family: Heimdal">CAST'IN</span> en action</h1>
+          <h1 class="section-title"><span style="font-family: Heimdal">CAST'IN</span> en action</h1>
         </div>
         <div class="container_presentation_logo">
           <div class="presentation-section_app-screenshot">
-            <img src="/castin/Chargement.png" alt="Capture d'écran de l'application Cast'IN" />
+            <img src="/castin/Chargement.png" alt="Capture d'écran de l'application Cast'IN"/>
           </div>
           <div class="presentation-section_text">
             <p>
-              Découvrez bientôt Cast'in en action sur téléphone. Notre application vous offrira une expérience fluide et intuitive. Avec notre interface conviviale, vous pourrez créer et consulter des annonces de castings en un instant. Les filtres avancés vous permettront de cibler les offres en fonction de votre profil. Plus besoin de chercher ailleurs, tout ce dont vous avez besoin est à portée de main. Cast'in sera la passerelle entre votre talent et les opportunités qui vous attendent. Rejoignez-nous aujourd'hui et faites briller votre carrière artistique.
+              Découvrez bientôt Cast'in en action sur téléphone. Notre application vous offrira une expérience fluide et
+              intuitive. Avec notre interface conviviale, vous pourrez créer et consulter des annonces de castings en un
+              instant. Les filtres avancés vous permettront de cibler les offres en fonction de votre profil. Plus
+              besoin de chercher ailleurs, tout ce dont vous avez besoin est à portée de main. Cast'in sera la
+              passerelle entre votre talent et les opportunités qui vous attendent. Rejoignez-nous aujourd'hui et faites
+              briller votre carrière artistique.
             </p>
           </div>
         </div>
       </div>
       <div class="presentation-section">
-      <div class="presentation-section_text">
-        <p>
-          Restez informé de l'évolution de notre projet en consultant régulièrement les publications sur notre roadmap. Nous vous tiendrons au courant de nos progrès et des nouvelles fonctionnalités à venir. Nous sommes impatients de vous accueillir sur notre plateforme.
-        </p>
-      </div>
+        <div class="presentation-section_text">
+          <p>
+            Restez informé de l'évolution de notre projet en consultant régulièrement les publications sur notre
+            roadmap. Nous vous tiendrons au courant de nos progrès et des nouvelles fonctionnalités à venir. Nous sommes
+            impatients de vous accueillir sur notre plateforme.
+          </p>
+        </div>
       </div>
 
 
@@ -60,25 +74,48 @@ import WaveDivider from "@/components/header/WaveHeader.vue";
 
 <style scoped>
 @media (max-width: 1000px) {
-  .container_presentation_logo{
+  .container_presentation_logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: auto;
   }
-}
 
-@media (max-width: 1000px) {
-  .container{
+  .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 }
 
-.presentation-section{
-display: flex;
+@media (max-width: 1500px){
+  .presentation-section_text  {
+    width: 100%;
+  }
+  .presentation-section_text > p {
+    font-size: 20px!important;
+  }
+  .container{
+    width: 100%!important;
+    margin: 0!important;
+    max-width: 100%!important;
+  }
+}
+
+
+
+.presentation-section_text > p {
+  font-size: 30px;
+  text-align: justify;
+}
+
+.presentation-section_text {
+  width: 100%;
+}
+
+.presentation-section {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -91,8 +128,9 @@ display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container {
-  max-width: 1500px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -126,6 +164,7 @@ display: flex;
   text-align: center;
   font-size: 14px;
 }
+
 .presentation-section_app-screenshot {
   display: flex;
   justify-content: center;
@@ -139,11 +178,12 @@ display: flex;
   justify-content: center;
   align-items: center;
   text-align: justify;
-  font-size: 20px;
-  width: 100%;
+  font-size: 25px;
+  width: 75%;
   margin: 30px;
 
 }
+
 .presentation-section-image {
   display: flex;
   justify-content: center;
