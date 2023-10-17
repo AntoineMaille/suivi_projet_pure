@@ -51,7 +51,6 @@ fetchData()
 #article-image {
     border-radius: 20px;
     height: 40vh;
-    margin-top: 4vh;
 }
 
 #article-container {
