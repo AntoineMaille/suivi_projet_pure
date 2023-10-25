@@ -35,6 +35,7 @@ p {
 .image-container {
     float : left;
     margin-right: 20px;
+    height: 100%;
 }
 
 .round-image {
@@ -45,6 +46,7 @@ p {
 
 .profil {
     padding-bottom: 20px;
+    display: flex;
 }
 
 @media screen and (max-width: 768px) {
