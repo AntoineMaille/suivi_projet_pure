@@ -35,7 +35,8 @@ p {
 .image-container {
     float : left;
     margin-right: 20px;
-    height: 100%;
+    margin-top: 20px;
+
 }
 
 .round-image {
@@ -69,8 +70,8 @@ p {
 
     .round-image {
         border-radius: 50%;
-        width : 100px;
-        height : 100px;
+        width : 75px;
+        height : 75px;
     }
 }
 
