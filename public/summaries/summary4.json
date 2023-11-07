@@ -1,9 +1,9 @@
 {
-  "title": "Les maquettes de l'application",
+  "title": "L'outil de management de l'équipe",
   "id": 4,
   "ref" : "article4",
-  "image": "/images/maquettages.png",
-  "resume": "Découvrez les maquettes de l'application",
-  "icon": "/icons/icon2.png",
+  "image": "/images/outils.png",
+  "resume": "Découvrez l'outil mis en place par l'équipe",
+  "icon": "/icons/icon6.png",
   "date": "7-11-2023"
 }
