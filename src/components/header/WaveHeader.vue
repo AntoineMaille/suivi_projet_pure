@@ -5,6 +5,9 @@
       <h1 class="pa-10">{{ title }} <span style="font-family: Heimdal" v-if="$route.path !== '/about'">CAST'IN</span></h1>
       <v-spacer />
       <ScrollDownButton class="mb-12" href="#section-2" v-if="$route.path === '/roadmap'"/>
+      <v-btn @click="$router.push('/roadmap')" id="roadmap" variant="outlined" rounded="xl"  v-if="$route.path !== '/roadmap'" style="margin-bottom: 50px">
+        Roadmap
+      </v-btn>
     </div>
   </div>
 </template>
@@ -16,8 +19,6 @@ import { ref, defineProps } from "vue";
 const props = defineProps({
   title: String,
 });
-
-
 
 </script>
 

@@ -25,7 +25,7 @@ async function scrollToLastNews() {
 
     //parse new Date with moment
 
-    let lastNewsDate = "01-01-2100";
+    let lastNewsDate = "01-01-2000";
     let lastNewsName = "";
     // Iterate through loaded JSON files
     for (let filePath in files) {
@@ -33,7 +33,7 @@ async function scrollToLastNews() {
             //remove /public from path
             filePath = filePath.replace('/public', '');
             const jsonData = await fetch(filePath).then(response => response.json()); // Get the JSON data
-            if (moment(jsonData.date, "DD-MM-YYYY").diff(moment(lastNewsDate, "DD-MM-YYYY")) < 0) {
+            if (moment(jsonData.date, "DD-MM-YYYY").diff(moment(lastNewsDate, "DD-MM-YYYY")) > 0) {
                 lastNewsDate = jsonData.date;
                 lastNewsName = jsonData.ref;
             }
